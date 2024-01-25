@@ -1,6 +1,6 @@
-# Servicio de Creación y Consulta de Usuarios
+# Servicio de Creación de Usuarios
 
-Este servicio permite la creación y consulta de usuarios. Desarrollado como parte de una prueba de habilidades, el proyecto está en desarrollo y no se recomienda su uso en un entorno de producción.
+Este servicio permite la creación de usuarios. Desarrollado como parte de una prueba de habilidades, el proyecto está en desarrollo y no se recomienda su uso en un entorno de producción.
 
 ## Documentos
 En la carpeta docs se encuentra el diagrama de componente y secuencia, además del enunciado de la prueba que generó este proyecto.
