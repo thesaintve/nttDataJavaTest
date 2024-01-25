@@ -26,7 +26,12 @@ Asegúrese de tener instalados los siguientes elementos en su entorno de desarro
 2. **Configurar la Base de Datos H2 (Opcional):**
     El proyecto puede utilizar H2 como base de datos embebida. Modifique la configuración en `src/main/resources/application.yml` según sus necesidades.
 
-3. **Ejecutar la Aplicación con Gradle:**
+
+3. **Compilar la Aplicación con Gradle:**
+    ```bash
+    ./gradlew clean build --refresh-dependencies
+    ```
+4. **Ejecutar la Aplicación con Gradle:**
     ```bash
     ./gradlew bootRun
     ```
@@ -111,6 +116,11 @@ Asegúrese de tener instalados los siguientes elementos en su entorno de desarro
         ```
 
 
+## Documentación de las APIs
+1. **Acceder al Swagger:**
+    Con un navegador web como Chrome o Firefox se puede acceder a la información de APIs en http://localhost:8091/swagger-ui
+
+
 
 ## Estructura del Proyecto
 
@@ -123,6 +133,8 @@ tu-proyecto/
 │   │   │       └── microservice/
 │   │   │           └── nttdata/
 │   │   │               ├── NttDataUserApplication.java
+│   │   │               ├── config/
+│   │   │               │   └── SwaggerConfig.java
 │   │   │               ├── controller/
 │   │   │               │   └── UserController.java
 │   │   │               ├── dto/
