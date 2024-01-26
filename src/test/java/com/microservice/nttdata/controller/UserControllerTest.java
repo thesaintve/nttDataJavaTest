@@ -60,7 +60,7 @@ class UserControllerTest {
 
         when(userService.createUser(any(SignUpUserDto.class))).thenReturn(expectedUser);
 
-        mockMvc.perform(post("/sign-up")
+        mockMvc.perform(post("/user")
                 .contentType(MediaType.APPLICATION_JSON)
                 .content(new ObjectMapper().writeValueAsString(signUpUser)))
                 .andExpect(status().isOk())
@@ -75,7 +75,7 @@ class UserControllerTest {
         SignUpUserDto emptySignUpUser = new SignUpUserDto();
 
         try {
-            mockMvc.perform(post("/sign-up")
+            mockMvc.perform(post("/user")
                     .contentType(MediaType.APPLICATION_JSON)
                     .content(new ObjectMapper().writeValueAsString(emptySignUpUser)))
                     .andExpect(status().isBadRequest());

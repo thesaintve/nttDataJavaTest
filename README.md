@@ -44,7 +44,7 @@ Asegúrese de tener instalados los siguientes elementos en su entorno de desarro
     Utilice herramientas como Postman o curl para interactuar con la API.
 
 3. **Crear un Usuario:**
-    - Endpoint: `http://localhost:8091/sign-up`
+    - Endpoint: `http://localhost:8091/user`
     - Método: `POST`
     - Cuerpo de la Solicitud:
         ```json
@@ -64,7 +64,7 @@ Asegúrese de tener instalados los siguientes elementos en su entorno de desarro
 
     - Ejemplo de Solicitud en CURL:    
         ```
-        curl --location --request POST 'http://localhost:8091/sign-up' \
+        curl --location --request POST 'http://localhost:8091/user' \
         --header 'Content-Type: application/json' \
         --data-raw '{
             "name": "Pedro Perez",

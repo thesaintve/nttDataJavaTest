@@ -16,7 +16,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import java.util.stream.Collectors;
 
 @RestController
-@RequestMapping(value="/sign-up")
+@RequestMapping(value="/user")
 @Validated
 public class UserController {
 
@@ -27,7 +27,7 @@ public class UserController {
     private UserService userService;
 
     @PostMapping
-    public ResponseEntity<CreatedUserDto> signUp(@Validated @RequestBody SignUpUserDto signUpUserDto, BindingResult bindingResult) {
+    public ResponseEntity<CreatedUserDto> addUser(@Validated @RequestBody SignUpUserDto signUpUserDto, BindingResult bindingResult) {
         try {
             if (!bindingResult.hasErrors()) {
                 User uCreated = userService.createUser(signUpUserDto);
